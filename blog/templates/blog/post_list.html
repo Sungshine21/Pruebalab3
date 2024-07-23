@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnitas Reu</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Color de fondo clarito */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px; /* Espacio para el pie de página */
+        }
+        .page-header {
+            background-color: #d3b89b; /* Color café claro para el encabezado */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .content {
+            background-color: #ffffff; /* Fondo blanco para el contenedor de contenido */
+            padding: 20px;
+            border-radius: 8px; /* Opcional: para bordes redondeados */
+            margin-top: 20px;
+        }
+        .product-img {
+            width: 200px; /* Ajusta el ancho de las imágenes */
+            height: 150px; /* Ajusta la altura de las imágenes */
+            object-fit: cover; /* Ajusta el contenido de la imagen para llenar el contenedor */
+            display: block; /* Asegura que las imágenes se comporten correctamente en el contenedor */
+            margin: 0 auto; /* Centra las imágenes dentro del contenedor */
+        }
+        .product {
+            margin-bottom: 30px;
+        }
+        .description {
+            margin-bottom: 50px;
+        }
+        footer {
+            background-color: #d3b89b; /* Color café claro para el pie de página */
+            color: #fff; /* Color del texto en el pie de página */
+            padding: 10px 0; /* Reducción del padding */
+            text-align: center;
+            position: fixed; /* Fija el pie de página en la parte inferior */
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Tamaño de fuente reducido para el pie de página */
+        }
+        .category-header {
+            background-color: #eeeeee; /* Color de fondo para las cabeceras de las categorías */
+            padding: 10px;
+            border-radius: 4px; /* Opcional: para bordes redondeados */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/" style="color: #fff; text-decoration: none;">Carnitas Reu</a></h1>
+    </div>
+    <div class="content container">
+        <!-- Descripción de la tienda -->
+        <div class="description">
+            <h2>Carnitas Reu</h2>
+            <p>Explora nuestro catálogo y descubre nuestros productos frescos y sabrosos.</p>
+        </div>
+        
+        <!-- Catálogo de Productos -->
+        <h2>Catálogo de Productos</h2>
+
+        <!-- Categoría de Carnes -->
+        <div class="category-header">
+            <h3>Carnes</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://thefoodtech.com/wp-content/uploads/2020/05/carne-de-res.jpg" alt="Carne de res" class="product-img">
+                    <div class="caption">
+                        <h3>Carne Roja</h3>
+                        <p><strong>Tipo:</strong> Res</p>
+                        <p><strong>Precio:</strong> Q.12.50</p>
+                        <p>Deliciosa carne de res, perfecta para cualquier ocasión. Ideal para asar a la parrilla o cocinar a la plancha.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://www.apogua.org/wp-content/uploads/2022/02/beneficios-carne-cerdo-guatemala.jpg" alt="Cerdo" class="product-img">
+                    <div class="caption">
+                        <h3>Carne de cerdo</h3>
+                        <p><strong>Tipo:</strong> Roja</p>
+                        <p><strong>Precio:</strong> Q.10</p>
+                        <p>Corte de puyazo jugoso y tierno, excelente para preparar un asado suculento o una deliciosa carne a la parrilla.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/03/13/5e997e247257a.jpeg" alt="Pechuga de Pollo" class="product-img">
+                    <div class="caption">
+                        <h3>Carne de Pollo</h3>
+                        <p><strong>Tipo:</strong> Pollo</p>
+                        <p><strong>Precio:</strong> Q.50</p>
+                        <p>Pechuga de pollo jugosa y saludable, ideal para una comida balanceada y deliciosa.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Categoría de Bebidas -->
+        <div class="category-header">
+            <h3>Bebidas</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg/320px-15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg" alt="Cremita" class="product-img">
+                    <div class="caption">
+                        <h3>Coca cola</h3>
+                        <p><strong>Precio:</strong> Q.1.50</p>
+                        <p>Refrescante gaseosa que acompaña perfectamente cualquier comida. Dulce y suave, ideal para toda la familia.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdxdgT_p1ml81V98v374LH3V4qq42l2OTGA&s" alt="Agua" class="product-img">
+                    <div class="caption">
+                        <h3>Agua</h3>
+                        <p><strong>Precio:</strong> Q.1.00</p>
+                        <p>Deliciosa agua, una bebida tradicional y refrescante que combina perfectamente con nuestras carnes.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://www.comedera.com/wp-content/uploads/2022/04/Limonada-shutterstock_379385302.jpg" alt="Limonada" class="product-img">
+                    <div class="caption">
+                        <h3>Limonada</h3>
+                        <p><strong>Precio:</strong> Q.15</p>
+                        <p>Fresca limonada, perfecta para acompañar cualquier platillo y refrescarte en un día caluroso.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://recetasmexicanas.net/wp-content/uploads/2023/09/218-image_web.jpg" alt="Agua de Jamaica" class="product-img">
+                    <div class="caption">
+                        <h3>Agua de Jamaica</h3>
+                        <p><strong>Precio:</strong> Q.15</p>
+                        <p>Refrescante agua de Jamaica, ideal para acompañar tus comidas y mantenerte hidratado.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product">
+                <div class="thumbnail">
+                    <img src="https://www.onceuponachef.com/images/2023/07/pina-coladas.jpg" alt="Piña Colada" class="product-img">
+                    <div class="caption">
+                        <h3>Piña Colada</h3>
+                        <p><strong>Precio:</strong> Q.25</p>
+                        <p>Exótica piña colada, la bebida perfecta para disfrutar en cualquier ocasión. Refrescante y con un toque tropical.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Carnitas Reu. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
